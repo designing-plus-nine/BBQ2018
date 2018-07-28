@@ -5,8 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-@import "custom";
-
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -42,3 +40,5 @@
 @import "carousel";
 @import "utilities";
 @import "print";
+
+@import "custom";
