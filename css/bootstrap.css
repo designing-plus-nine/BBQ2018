@@ -7333,6 +7333,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.comtainer {
+  padding: 0px 26px; }
+
 header {
   position: relative;
   height: 100vh;
@@ -7348,3 +7351,18 @@ header {
     bottom: 95px;
     font-size: 30px;
     margin: 0; }
+
+.photo-item {
+  padding-left: 6px;
+  padding-right: 6px; }
+  .photo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto; }
+
+.photos {
+  margin: 6px 0px; }
+
+.main-text p {
+  font-size: 14px; }
