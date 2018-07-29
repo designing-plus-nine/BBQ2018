@@ -7367,3 +7367,13 @@ header {
 #overview li {
   margin-left: 3em;
   text-indent: -3em; }
+
+@media (max-width: 540px) {
+  #logo {
+    width: 180px;
+    height: auto; } }
+
+@media (min-width: 540px) {
+  #logo {
+    width: 300px;
+    height: auto; } }
