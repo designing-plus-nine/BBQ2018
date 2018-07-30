@@ -1,0 +1,58 @@
+@charset "UTF-8";
+* {
+  font-family: "游ゴシック体",YuGothic,"游ゴシック","Yu Gothic","メイリオ",sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border: 50px #14529c solid; }
+
+h1.text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+header p {
+  color: #fff;
+  font-size: 48px;
+  letter-spacing: 10px;
+  font-weight: bold; }
+
+h2 {
+  font-size: 48px;
+  font-family: "Futura";
+  font-weight: bold;
+  margin: 1em 0;
+  letter-spacing: 2px;
+  color: #14529c; }
+
+div #about, #food-and-planning, #overview, #access {
+  margin: 100px 0;
+  font-size: 20px;
+  line-height: 48px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+
+.fadein {
+  -webkit-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  opacity: 0;
+  -ms-transform: translate(0, 40px);
+      transform: translate(0, 40px);
+  -webkit-transform: translate(0, 40px); }
+
+.anime {
+  opacity: 1;
+  -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+  -webkit-transform: translate(0, 0); }
