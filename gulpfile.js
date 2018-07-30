@@ -30,7 +30,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('scss', function () {
-  gulp.src(paths.scss + 'bootstrap.scss')
+  gulp.src(paths.scss+'**/*.scss')
     .pipe(plumber({
       errorHandler: notify.onError('<%= error.message %>')
     }))

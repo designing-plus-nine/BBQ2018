@@ -22,6 +22,7 @@
     <meta property="og:description" content="Page Description">
     <!--Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>DP9 BBQ 2018</title>
 </head>
 
@@ -38,7 +39,7 @@
     </header>
 
     <div class="container">
-        <div id="about">
+        <div class="fadein" id="about">
             <h2>About Event</h2>
             <p>毎年恒例となったDP9BBQ！
                 <br> DP９はBBQも本気！東京港の地で、デザインとバーベキューを一緒に楽しみましょう！
@@ -46,7 +47,7 @@
                 <br> 世界のソースでお肉を食べましょう！
             </p>
         </div>
-        <div id="food-and-planning">
+        <div class="fadein" id="food-and-planning">
             <h2>Food and Planning</h2>
             <p>昨年のBBQの様子を写真掲載しつつ、今年の料理と企画をご紹介します！
                 <br> 今年のテーマは「GRILL!!〜世界をつまみ食い〜」
@@ -56,23 +57,23 @@
         </div>
 
         <div class="row photos">
-            <div class="col-6 photo-item">
+            <div class="fadein col-6 photo-item">
                 <img src="../assets/01.jpg" alt="ジューシーな肉">
             </div>
-            <div class="col-6 photo-item">
+            <div class="fadein col-6 photo-item">
                 <img src="../assets/02.jpg" alt="水遊び">
             </div>
         </div>
         <div class="row photos">
-            <div class="col-6 photo-item">
+            <div class="fadein col-6 photo-item">
                 <img src="../assets/03.jpg" alt="集合写真">
             </div>
-            <div class="col-6 photo-item">
+            <div class="fadein col-6 photo-item">
                 <img src="../assets/04.jpg" alt="彩り豊かな野菜">
             </div>
         </div>
 
-        <div id="overview">
+        <div class="fadein" id="overview">
             <h2>Overview</h2>
             <ul class="list-unstyled">
                 <li>日時　2018年8月4日（土）12:00～16:00（途中参加・帰宅OK）</li>
@@ -84,7 +85,7 @@
             </ul>
         </div>
 
-        <div id="access">
+        <div class="fadein" id="access">
             <h2>Access</h2>
             <p>〒140-0003 東京都品川区八潮４丁目１－１９
                 <br>大井ふ頭中央海浜公園</p>
@@ -106,6 +107,8 @@
     <!--Bootstrap js-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
+    <script src="../js/jquery.inview.min.js"></script>
+    <script src="../js/scripts-core.js"></script>
 </body>
 
 </html>
