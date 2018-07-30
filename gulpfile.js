@@ -1,5 +1,5 @@
-const gulp         = require('gulp');
-const sass         = require('gulp-sass');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require("browser-sync");
 const plumber = require('gulp-plumber');
@@ -30,13 +30,13 @@ gulp.task('watch', function () {
 });
 
 gulp.task('scss', function () {
-  gulp.src(paths.scss + 'bootstrap.scss')
+  gulp.src(paths.scss + '**/*.scss')
     .pipe(plumber({
       errorHandler: notify.onError('<%= error.message %>')
     }))
-		.pipe(sass(sassOptions).on('error', sass.logError))
-		.pipe(autoprefixer(autoPrefixerOptions))
-		.pipe(gulp.dest(paths.css));
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(autoprefixer(autoPrefixerOptions))
+    .pipe(gulp.dest(paths.css));
 });
 
 gulp.task('browser-sync', () => {
