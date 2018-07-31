@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.2 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7333,14 +7334,18 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.comtainer {
+.container {
   padding: 0px 26px; }
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  font-weight: bold; }
 
 header {
   position: relative;
   height: 100vh;
   min-height: 300px;
-  background: url("../assets/main.jpg") no-repeat center;
+  background: url("../../assets/main.jpg") no-repeat center;
   background-size: cover; }
   header h1 {
     margin-top: 20px; }
@@ -7349,8 +7354,15 @@ header {
     left: 0;
     right: 0;
     bottom: 95px;
+    margin: 0;
     font-size: 30px;
-    margin: 0; }
+    color: #ffffff; }
+
+h2 {
+  color: #1d5ca8;
+  font-weight: bold;
+  font-family: "Futura","Century Gothic";
+  margin: 1em 0; }
 
 .photo-item {
   padding-left: 6px;
@@ -7377,3 +7389,19 @@ header {
   #logo {
     width: 300px;
     height: auto; } }
+
+@media (min-width: 750px) {
+  body {
+    border: 50px #1d5ca8 solid; }
+  header {
+    height: calc(100vh - 50px); }
+  header p {
+    font-size: 3rem;
+    letter-spacing: 10px; }
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 1px; }
+  p {
+    font-size: 1.2rem; }
+  li {
+    font-size: 1.2rem; } }

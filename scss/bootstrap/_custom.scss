@@ -1,32 +1,47 @@
-.comtainer{
+$main : #1d5ca8;
+
+.container {
   padding: 0px 26px;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  font-weight: bold;
 }
 
 header {
     position: relative;
     height: 100vh;
     min-height: 300px;
-    background: url("../assets/main.jpg") no-repeat center;
+    background: url("../../assets/main.jpg") no-repeat center;
     background-size: cover;
 
-    h1{
+    h1 {
             margin-top: 20px;
     }
-    p{
+    p {
             position: absolute;
             left: 0;
             right: 0;
             bottom: 95px;
-            font-size: 30px;
             margin: 0;
+            font-size: 30px;
+            color: #ffffff;
     }
 }
 
-.photo-item{
+h2 {
+  color: $main;
+  font-weight: bold;
+  font-family: "Futura","Century Gothic";
+  margin: 1em 0;
+}
+
+.photo-item {
   padding-left: 6px;
   padding-right: 6px;
 
-      img{
+      img {
         max-width: 100%;
         max-height: 100%;
         width: auto;
@@ -34,28 +49,51 @@ header {
       }
 }
 
-.photos{
+.photos {
   margin: 6px 0px;
 }
 
-#overview{
+#overview {
 
-      li{
+      li {
         margin-left: 3em;
         text-indent: -3em;
       }
 }
 
-@media(max-width:540px){
-  #logo{
+@media(max-width:540px) {
+  #logo {
     width: 180px;
     height: auto;
   }
 }
 
-@media(min-width:540px){
-  #logo{
+@media(min-width:540px) {
+  #logo {
     width: 300px;
     height: auto;
+  }
+}
+
+@media(min-width:750px) {
+  body {
+    border: 50px $main solid;
+  }
+  header {
+    height: calc(100vh - 50px);
+  }
+  header p{
+    font-size: 3rem;
+    letter-spacing: 10px;
+  }
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  li {
+    font-size: 1.2rem;
   }
 }
