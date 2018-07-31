@@ -38,8 +38,7 @@ h2 {
 }
 
 .photo-item {
-  padding-left: 6px;
-  padding-right: 6px;
+  padding: 6px;
 
       img {
         max-width: 100%;
@@ -47,10 +46,6 @@ h2 {
         width: auto;
         height: auto;
       }
-}
-
-.photos {
-  margin: 6px 0px;
 }
 
 #overview {
