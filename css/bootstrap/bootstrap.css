@@ -7344,7 +7344,7 @@ body {
 header {
   position: relative;
   height: 100vh;
-  min-height: 300px;
+  min-height: 500px;
   background: url("../../assets/main.jpg") no-repeat center;
   background-size: cover; }
   header h1 {
@@ -7356,20 +7356,13 @@ header {
     bottom: 95px;
     margin: 0;
     font-size: 30px;
-    color: #ffffff; }
+    color: #ffffff;
+    letter-spacing: 3px; }
 
 h2 {
   color: #1d5ca8;
-  font-weight: bold;
   font-family: "Futura","Century Gothic";
-  margin: 1em 0; }
-
-div #about, #food-and-planning, #overview, #access {
-  margin: 100px 0;
-  font-size: 20px;
-  line-height: 48px;
-  font-weight: bold;
-  letter-spacing: 1px; }
+  font-weight: bold; }
 
 .photo-item {
   padding: 6px; }
@@ -7393,6 +7386,15 @@ div #about, #food-and-planning, #overview, #access {
     width: 300px;
     height: auto; } }
 
+@media (max-width: 750px) {
+  div #about, #food-and-planning, #overview, #access {
+    margin: 70px 0;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.8px; }
+  h2 {
+    margin: 0.8em 0; } }
+
 @media (min-width: 750px) {
   body {
     border: 50px #1d5ca8 solid; }
@@ -7403,8 +7405,10 @@ div #about, #food-and-planning, #overview, #access {
     letter-spacing: 10px; }
   h2 {
     font-size: 3rem;
-    letter-spacing: 1px; }
-  p {
-    font-size: 1.2rem; }
-  li {
-    font-size: 1.2rem; } }
+    letter-spacing: 1px;
+    margin: 1em 0; }
+  div #about, #food-and-planning, #overview, #access　 {
+    margin: 100px 0;
+    font-size: 1.25rem;
+    line-height: 48px;
+    letter-spacing: 1px; } }
