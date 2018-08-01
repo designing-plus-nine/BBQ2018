@@ -7416,3 +7416,22 @@ h2 {
     letter-spacing: 1px; }
   div #map {
     margin: 30px 0; } }
+
+/*フェードイン*/
+.fadein {
+  -webkit-transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  opacity: 0;
+  -ms-transform: translate(0, 40px);
+      transform: translate(0, 40px);
+  -webkit-transform: translate(0, 40px); }
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }

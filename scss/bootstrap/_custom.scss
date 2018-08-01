@@ -111,3 +111,17 @@ h2 {
     margin: 30px 0;
   }
 }
+
+/*フェードイン*/
+.fadein {
+	transition: all 0.7s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition-delay: 0.5s;
+  opacity: 0;
+  transform: translate(0,40px);
+  -webkit-transform: translate(0,40px);
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
