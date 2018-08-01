@@ -71,11 +71,14 @@ h2 {
 }
 
 @media(max-width:750px) {
-  div #about, #food-and-planning, #overview, #access {
+  div #about,#food-and-planning,#overview,#access{
   margin: 70px 0;
   line-height: 30px;
   font-weight: bold;
   letter-spacing: 0.8px;
+  }
+  div #map{
+    margin: 20px 0;
   }
   h2 {
     margin: 0.8em 0;
@@ -98,10 +101,13 @@ h2 {
     letter-spacing: 1px;
     margin: 1em 0;
   }
-  div #about,#food-and-planning,#overview, #access　{
+  div #about,#food-and-planning,#overview, #access{
   margin: 100px 0;
   font-size: 1.25rem;
   line-height: 48px;
   letter-spacing: 1px;
+  }
+  div #map{
+    margin: 30px 0;
   }
 }
