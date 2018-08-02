@@ -131,3 +131,36 @@ h2 {
   opacity: 1;
   transform: translate(0, 0);
 }
+
+// facebookボタン
+.btn-fb{
+  background-color: $main;
+  color: #ffffff;
+  line-height: 1.5;
+  @media(max-width:750px) {
+    padding: 0.5rem 1.3rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+  }
+  @media(min-width:750px) {
+    padding: 0.6rem 1.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+  }
+}
+
+.btn-wrapper{
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+  width: 100vw;
+  left: 0px;
+  right: 0px;
+  @media(max-width:750px) {
+    bottom: 30px;
+  }
+  @media(min-width:750px) {
+    bottom: 40px;
+  }
+}
+
